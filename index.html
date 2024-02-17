@@ -8,7 +8,8 @@
 </head>
 <body>
  
-    <audio src="/audio/Mananitas.mp3" type="audio/mpeg" autoplay></audio>
+    <audio id="myAudio" src="/audio/Mananitas.mp3" type="audio/mpeg"></audio>
+<button onclick="playAudio()">Reproducir</button>
 <div class="container">
 
 
@@ -32,5 +33,11 @@
  <div id="name-canvas"></div>
  <!-- Include the script file -->
  <script src="javascript.js"></script>
+ <script>
+    function playAudio() {
+      var audio = document.getElementById("myAudio");
+      audio.play();
+    }
+    </script>
 </body>
 </html>
