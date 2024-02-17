@@ -28,7 +28,7 @@
                  ¡muchas Felicidades!
 
        </p>
-       <p class="name" onclick="playAudio()">Te quiero mucho!!!</p>
+       <button class="name" onclick="playAudio()">Te quiero mucho!!!</button>
  
     </div>
     <audio id="myAudio" src="/audio/Mananitas.mp3" type="audio/mpeg"></audio>
@@ -37,11 +37,11 @@
  <div id="name-canvas"></div>
  <!-- Include the script file -->
  <script src="javascript.js"></script>
- <script>
-    function playAudio() {
-      var audio = document.getElementById("myAudio");
-      audio.play();
-    }
-    </script>
+<script>
+function playAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+}
+</script>
 </body>
 </html>
