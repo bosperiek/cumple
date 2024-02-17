@@ -111,9 +111,21 @@ img {
   }
 
   .name {
-    font-size: 15px;
-    padding-right: 20px;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: rgb(210, 177, 214, 0.7); /* Color de fondo */
+    color: #063f5b; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambio de cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+    font-family: inherit; /* Heredar el tipo de letra del body */
+    font-size: 30px; /* Tamaño de la fuente */
   }
+  
+  .name:hover {
+    background-color: rgb(210, 177, 214, 0.9); /* Cambio de color de fondo al pasar sobre el botón */
+  }
+  
   .container {
     width: 220px;
     height: 320px;
